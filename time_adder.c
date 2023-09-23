@@ -2,9 +2,9 @@
 int main()
 {
     int time1,time2;
+    int t1,t2,t3,t4,temp1,temp2,total;
     printf("Please enter two time points:\n");
     scanf("%d\n%d",&time1,&time2);
-    int t1,t2,t3,t4,temp1,temp2,total;
     t1 = time1 % 100;
     t2 = time2 % 100;
     t3 = time1-t1;

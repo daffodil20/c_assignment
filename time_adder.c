@@ -16,11 +16,7 @@ int main()
         temp1 = temp1-60;
         temp2 = temp2+100;
     }
-    if (temp2 >= 2400)
-    {
-        temp2 = temp2-2400;   
-    }
-    total = temp1+temp2;
+    total = temp1+temp2%2400;
     printf("%d",total);
     return 0;
 }

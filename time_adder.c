@@ -17,6 +17,6 @@ int main()
         temp2 = temp2+1;
     }
     // total = temp1+temp2%2400;
-    printf("%d%2d",temp2%24,temp1);
+    printf("%d%02d",temp2%24,temp1);
     return 0;
 }

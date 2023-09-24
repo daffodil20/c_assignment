@@ -1,9 +1,9 @@
 #include <stdio.h>
 int main()
 {
-    int days_leap[12],days_normal[12], d1, d2, i;
-    days_leap ={30,29,31,30,31,30,31,31,30,31,30,31};
-    days_normal={30,28,31,30,31,30,31,31,30,31,30,31};
+    int d1, d2, i;
+    int days_leap[12] ={30,29,31,30,31,30,31,31,30,31,30,31};
+    int days_normal[12]={30,28,31,30,31,30,31,31,30,31,30,31};
     printf("\n\nEnter 3 integers representing year,month and day seperated with space: ");
     int year,month,day;
     // year=0

@@ -2,12 +2,12 @@
 // #include <math.h>
 int main()
 {
-    int num,i,temp,digit;
+    int num,i,temp,digit,t;
     int a[5];
     // double i,temp;
     printf("请输入一个五位数：");
     scanf("%5d",&num);
-    for (i = 4;i--;i >= 0)
+    for (i = 4;i >= 0;i--)
     {
         if (i==4)
         {
@@ -15,7 +15,7 @@ int main()
             temp = num/10;
             a[i] = digit;
             // display = (temp-display)/10;
-            printf("%d ",a[i]);
+            // printf("%d ",a[i]);
         }
         if (i<4)
         {
@@ -23,10 +23,14 @@ int main()
             temp = temp/10;
             a[i] = digit;
             // display = (temp-display)/10;
-            printf("%d ",a[i]);
+            // printf("%d ",a[i]);
         }
+    
     }
-        
+    for (t=0;t<5;t++)
+    {
+        printf("%d ",a[t]);
+    }
         // temp = 1.0*(num/pow(10.0,i))%10;
         
         // num2 = (num/1000)%10;

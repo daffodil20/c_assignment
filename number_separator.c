@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int num,i,digit,t;
+    int num,i,digit;
     int a[5];
     printf("请输入一个五位数：");
     scanf("%5d",&num);
@@ -11,9 +11,9 @@ int main()
         num = num/10;
         a[i] = digit;
     }
-    for (t=0;t<5;t++)
+    for (i=0;i<5;i++)
     {
-        printf("%d ",a[t]);
+        printf("%d ",a[i]);
     }
     return 0;
 }

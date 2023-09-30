@@ -13,15 +13,24 @@ int main(){
             month--;
         }
     }
-    if (year % 400 == 0){
-        while (month-2>=0){
-            total = total + days_leap[month-2];
-            month--;
+    // if (year % 400 == 0){
+    //     while (month-2>=0){
+    //         total = total + days_leap[month-2];
+    //         month--;
+    //     }
+    // }
+    else{
+        if (year % 400 == 0){
+            while (month-2>=0){
+                total = total + days_leap[month-2];
+                month--;
+            }
         }
-    }else{
-        while (month-2>=0){
-            total = total + days_normal[month-2];
-            month--;
+        else{
+            while (month-2>=0){
+                total = total + days_normal[month-2];
+                month--;
+            }
         }
     }
     total=total+day;

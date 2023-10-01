@@ -11,15 +11,12 @@ int main(){
         if (digit1 == digit5 && digit2 == digit4){
             printf("YES");
         }
-        if (digit1 != digit5 || digit2 != digit4){
+        else{
             printf("NO");
         }
     }
-    if (num/10000 == 0){
+    else{
         printf("error");
     }
-    // if (digit1 != digit5 || digit2 != digit4){
-    //     printf("NO");
-    // }
     return 0;
 }

@@ -11,17 +11,6 @@ int main(){
             unit = unit*10;
         }
     }
-    //     if ((num/unit) >= 1){
-    //         unit = unit*10;
-    //         if ((n/unit) < 10){
-    //             break;
-    //         }
-    //     }
-    //     if ((n/unit) < 1){
-    //         break;
-    //     }
-    // printf("%d",digits);
-    // }
     int array1[digits],array2[digits];
     unit = 10;
     location = digits-1;
@@ -35,13 +24,11 @@ int main(){
             temp = num/unit;
             result = temp%10;
             if (position < digits){
-                // printf("%d ",result);
                 location = location - 1;
                 array2[position-1] = result;
                 array1[location] = result;
             }
             if (position == digits){
-                // printf("%d\n",result);
                 location = location - 1;
                 array2[position-1] = result;
                 array1[location] = result;

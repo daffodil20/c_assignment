@@ -28,7 +28,8 @@ int main(){
                     t=0;
                     break;
                 }
-            }if (m%i == 0){
+            }
+            if (m%i == 0){
                 m++;
                 t=0;
                 break;

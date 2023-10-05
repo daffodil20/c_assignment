@@ -1,15 +1,32 @@
 #include <stdio.h>
 int main(){
-    int composite,prime_factor,i,factor_counter;
+    int composite,prime_factor,i,factor_counter,array[100],length;
     printf("Please input a composite number:");
     scanf("%d",&composite);
     factor_counter = 0;
-    for (i = 1;i < composite; i++){
+    length = 0;
+    for (i = 2;i < composite; i++){
         if (composite % i == 0){
             composite = composite/i;
-            
-            prime_factor = i;
+            prime_factor = 2;
             factor_counter ++;
+            while (prime_factor < composite){
+                composite = composite/prime_factor;
+                if (prime_factor == i){
+                    factor_counter ++;
+                    if (factor_counter >= 2){
+                        length ++;
+                        array[length - 1] = prime_factor;
+                    prime_factor = 2;
+                    continue;
+                    }
+                }else{
+                    continue;
+                }
+                // prime_factor = prime_factor + 1;
+            }
+            
+            
         }
     //         while (temp < composite)
     //             composite

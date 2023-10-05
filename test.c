@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include <math.h>
 int main()
 {
-    float time1 = 20.0;
-    float time2 = 10.0;
-    int tt;
-    tt = time1 / time2;
-    printf("%d\n",tt);
+    int time1 = 20;
+    int time2 = 10;
+    double tt =111.222;
+    // tt = time1 / time2;
+    tt = pow(time1, time2);
+    printf("%f\n",tt % 10);
     return 0;
 }

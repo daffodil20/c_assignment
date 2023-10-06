@@ -19,17 +19,24 @@ int main(){
             }
             if (m%i != 0){
                 indivisible_counter = indivisible_counter + 1;
-                if (m-i > 1){
-                    // indivisible_counter = indivisible_counter + 1;
-                    continue;
-                }
-                if (m-i == 1){
-                    if (indivisible_counter == m-2){
-                        printf("\nP,%d ",m);
-                    }
+                // if (m-i > 1){
+                //     // indivisible_counter = indivisible_counter + 1;
+                //     continue;
+                // }
+                // if (m-i == 1){
+                if (indivisible_counter == m-2){
+                    printf("\nP,%d ",m);
                     m = m+1;
                     indivisible_counter = 0;
                     break;
+                }
+                // m = m+1;
+                // indivisible_counter = 0;
+                // break;
+                else{
+                    // m = m+1;
+                    // indivisible_counter = 0;
+                    continue;
                 }
             }
             if (m%i == 0 && m != 2){
@@ -42,10 +49,6 @@ int main(){
                 break;
             }
         }
-    // int prime[100];
-    // for (j=0;j<p;j++){
-    //     printf("%d ",prime[j]);
-    // }
     }
     return 0;
 }

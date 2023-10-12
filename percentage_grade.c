@@ -7,16 +7,16 @@ int main(){
     switch (label){
         case 10:
         case 9:
-            printf('A');
+            printf("A");
             break;
         case 8:
-            printf('B');
+            printf("B");
             break;
         case 7:
-            printf('C');
+            printf("C");
             break;
         case 6:
-            printf('D');
+            printf("D");
             break;
         case 5:
         case 4:
@@ -24,9 +24,10 @@ int main(){
         case 2:
         case 1:
         case 0:
-            printf('E');
+            printf("E");
             break;
         default:
             break;
     }
+    return 0;
 }

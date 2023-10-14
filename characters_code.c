@@ -4,19 +4,23 @@ int main(){
     character = getchar();
     while ('a' <= character && character <= 'v'){
         character = character + 4;
-        printf("%c",character);
+        putchar(character);
+        break;
     }
     while ('A' <= character && character <= 'V'){
         character = character + 4;
-        printf("%c",character);
+        putchar(character);
+        break;
     }
-    while ('w' <= character <= 'z'){
+    while ('w' <= character && character <= 'z'){
         character = character - 22;
-        printf("%c",character);
+        putchar(character);
+        break;
     }
-    while ('W' <= character <= 'Z'){
+    while ('W' <= character && character <= 'Z'){
         character = character - 22;
-        printf("%c",character);
+        putchar(character);
+        break;
     }
     return 0;
 }

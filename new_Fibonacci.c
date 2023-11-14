@@ -4,11 +4,12 @@ int main(){
     scanf("%d",&n);
     for (counter = 2;counter <= n;counter ++){
         f = f1+f0;
-        if (counter < n){
+        // if (counter < n){
             f0 = f1;
             f1 = f;
-        }
+        // }
     }
+    printf("%d", f);
     if (f % 3 == 0){
         printf("yes");
     }else{
